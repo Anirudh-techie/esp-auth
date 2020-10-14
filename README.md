@@ -1,4 +1,4 @@
-# http-auth
+# esp-auth
 It is an awesome light-weight auth middleware for express. it uses BASIC http authentication.
 
 # API
@@ -12,9 +12,8 @@ The data property in the user object will  be added to req.authData
 
 
 # Example
-`
-
-var httpAuth = require("../");
+```javascript
+var espAuth = require("esp-auth");
 var users = [
 {       
    username:"admin",
@@ -39,9 +38,9 @@ var realm = "Awesome app";
 
 var unauthhtml = "<h1>Login!!</h1> <h6>You have requested a page without authorization</h6>"
 
-app.use(httpAuth(users,unauthhtml,realm));
+app.use(espAuth(users,unauthhtml,realm));
 
 app.get("/",(req,res)=>{
    res.send(`<h1>Hello ${req.user}</h1><h2>You are a ${req.authData.role}</h2>`)
 })
-`
+```

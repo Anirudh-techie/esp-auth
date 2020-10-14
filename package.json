@@ -1,15 +1,14 @@
 {
   "name": "esp-auth",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "it is a simple light wieght BASIC http auth express middleware. Just add this middleware to express App and get simple auth. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node example/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Anirudh-techie/http-auth.git"
+    "url": "git+https://github.com/Anirudh-techie/esp-auth.git"
   },
   "keywords": [
     "http",
@@ -22,7 +21,7 @@
   "author": "Anirudh Manoj C.V",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Anirudh-techie/http-auth/issues"
+    "url": "https://github.com/Anirudh-techie/esp-auth/issues"
   },
-  "homepage": "https://github.com/Anirudh-techie/http-auth#readme"
+  "homepage": "https://github.com/Anirudh-techie/esp-auth#readme"
 }

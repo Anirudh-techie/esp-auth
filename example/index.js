@@ -1,6 +1,6 @@
 var app = require("express")();
 
-var httpAuth = require("../");
+var espAuth = require("esp-auth");
 var users = [
 {       
    username:"admin",
@@ -25,7 +25,7 @@ var realm = "Awesome app";
 
 var unauthhtml = "<h1>Login!!</h1> <h6>You have requested a page without authorization</h6>"
 
-app.use(httpAuth(users,unauthhtml,realm));
+app.use(espAuth(users,unauthhtml,realm));
 
 app.get("/",(req,res)=>{
    res.send(`<h1>Hello ${req.user}</h1><h2>You are a ${req.authData.role}</h2>`)

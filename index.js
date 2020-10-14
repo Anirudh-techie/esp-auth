@@ -4,7 +4,7 @@
  * @param  realm Value for HTTP Realm
  * @param UnauthorizedHTML HTML string to send back for non authorized users
  * @returns Auth Middleware for Express App
- * @example var httpAuth = require("http-auth");
+ * @example var espAuth = require("esp-auth");
  * var users = [
  *    {
  *       username:"admin",
@@ -29,7 +29,7 @@
  * 
  * var unauthhtml = "<h1>Login!!</h1> <h6>You have requested a page without authorization</h6>"
  * 
- * app.use(httpAuth(users,unauthhtml,realm));
+ * app.use(espAuth(users,unauthhtml,realm));
  * app.get("/",(req,res)=>{
  *    res.send(`<h1>Hello ${req.user}</h1>`)
  * })
