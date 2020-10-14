@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "esp-auth": "^1.2.0",
+    "esp-auth": "^1.4.0",
     "express": "^4.17.1"
   }
 }
