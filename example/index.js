@@ -1,18 +1,4 @@
-# http-auth
-It is an awesome light-weight auth middleware for express. it uses BASIC http authentication.
-
-# API
-Params: users, unauthorizedhtml, realm
-
-users: Array of objects with value: username, password, data
-Unauthorizedhtml: HTML string to send to Unauthorized client
-realm: realm value for HTTP header
-
-The data property in the user object will  be added to req.authData
-
-
-# Example
-`
+var app = require("express")();
 
 var httpAuth = require("../");
 var users = [
@@ -44,4 +30,6 @@ app.use(httpAuth(users,unauthhtml,realm));
 app.get("/",(req,res)=>{
    res.send(`<h1>Hello ${req.user}</h1><h2>You are a ${req.authData.role}</h2>`)
 })
-`
+app.listen(3000,()=>{
+   console.log("app listening in port 3000")
+});
