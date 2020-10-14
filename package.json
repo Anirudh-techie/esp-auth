@@ -1,6 +1,6 @@
 {
   "name": "esp-auth",
-  "version": "1.4.0",
+  "version": "1.4.8",
   "description": "it is a simple light wieght BASIC http auth express middleware. Just add this middleware to express App and get simple auth. ",
   "main": "index.js",
   "scripts": {
