@@ -4,9 +4,9 @@ It is an awesome light-weight auth middleware for express. it uses BASIC http au
 # API
 Params: users, unauthorizedhtml, realm
 
-users: Array of objects with value: username, password, data
-Unauthorizedhtml: HTML string to send to Unauthorized client
-realm: realm value for HTTP header
+users: Array of objects with value: username, password, data <br>
+Unauthorizedhtml: HTML string to send to Unauthorized client <br>
+realm: realm value for HTTP header <br>
 
 The data property in the user object will  be added to req.authData
 
