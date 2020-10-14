@@ -13,6 +13,7 @@ The data property in the user object will  be added to req.authData
 
 # Example
 ```javascript
+var app = require("express")();
 var espAuth = require("esp-auth");
 var users = [
 {       
@@ -43,4 +44,5 @@ app.use(espAuth(users,unauthhtml,realm));
 app.get("/",(req,res)=>{
    res.send(`<h1>Hello ${req.user}</h1><h2>You are a ${req.authData.role}</h2>`)
 })
+app.listen(3000)
 ```
